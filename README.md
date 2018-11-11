@@ -111,3 +111,15 @@ frontend
 vendor/                  contains dependent 3rd-party packages
 environments/            contains environment-based overrides
 ```
+
+GENERAL INDICATIONS
+-------------------
+
+### i18n - Translating App Messages
+
+The i18n configuration is set up using the instructions found at [Yii2 i18n](https://www.yiiframework.com/doc/guide/2.0/en/tutorial-i18n).
+The i18n configuration file is located at ```<ProjectRoot>/messages/config-messages.php```
+
+To extract your app messages you can do so using the [message command](https://www.yiiframework.com/doc/guide/2.0/en/tutorial-i18n#using-the-message-command).
+
+```./yii message messages/config-messages.php```

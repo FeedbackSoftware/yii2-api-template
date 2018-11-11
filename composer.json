@@ -18,9 +18,12 @@
   },
   "minimum-stability": "stable",
   // TODO Update dist and dev packages
-  // TODO Update Readme.md File
+  // TODO Update and Check Readme.md File
   // TODO check .yml files and git attributes and bowerrc
-  // TODO Set up tetsing
+  // TODO Set up testing according to business
+  // TODO Set up automatic API Docs
+  // TODO Set up i18n accoding to https://www.yiiframework.com/doc/guide/2.0/en/tutorial-i18n
+  // TODO Set up environments configuration
   "require": {
     "php": ">=5.4.0",
     "yiisoft/yii2": "~2.0.14",
