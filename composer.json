@@ -1,0 +1,50 @@
+{
+  "name": "FeedbackSoftware/yii2-api-template",
+  "description": "Yii 2 REST API Template",
+  "keywords": [
+    "yii2",
+    "framework",
+    "api",
+    "rest",
+    "project template"
+  ],
+  "homepage": "http://fbacks.com/",
+  "type": "project",
+  "license": "BSD-3-Clause",
+  "support": {
+    // TODO Update issues and source urls
+    "issues": "https://github.com/yiisoft/yii2/issues?state=open",
+    "source": "https://github.com/yiisoft/yii2"
+  },
+  "minimum-stability": "stable",
+  // TODO Update dist and dev packages
+  // TODO Update Readme.md File
+  // TODO check .yml files and git attributes and bowerrc
+  // TODO Set up tetsing
+  "require": {
+    "php": ">=5.4.0",
+    "yiisoft/yii2": "~2.0.14",
+    "yiisoft/yii2-bootstrap": "~2.0.0",
+    "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0"
+  },
+  "require-dev": {
+    "yiisoft/yii2-debug": "~2.0.0",
+    "yiisoft/yii2-gii": "~2.0.0",
+    "yiisoft/yii2-faker": "~2.0.0",
+    "codeception/base": "^2.4.0",
+    "phpunit/phpunit": "~6.5.5",
+    "codeception/verify": "~1.0.0"
+  },
+  "config": {
+    "process-timeout": 1800,
+    "fxp-asset": {
+      "enabled": false
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ]
+}
