@@ -25,6 +25,7 @@
   // TODO Set up i18n accoding to https://www.yiiframework.com/doc/guide/2.0/en/tutorial-i18n
   // TODO Set up environments configuration
   // TODO Set up console and migrations instructions
+  // TODO Fix common / models
   "require": {
     "php": ">=5.4.0",
     "yiisoft/yii2": "~2.0.14",
