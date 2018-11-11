@@ -1,4 +1,4 @@
-Yii 2 API Template
+Yii 2 API Template [WIP]
 ============================
 REQUIREMENTS
 ------------
