@@ -301,3 +301,16 @@
 
         return sprintf("\x1b[%sm", implode(';', array_map('getStyleCode', $styles))) . $message . "\x1b[0m";
     }
+
+    // TODO Update issues and source urls
+    // TODO Update dist and dev packages
+    // TODO Update and Check Readme.md File
+    // TODO check .yml files and git attributes and bowerrc
+    // TODO Set up testing according to business
+    // TODO Set up automatic API Docs
+    // TODO Set up i18n accoding to https://www.yiiframework.com/doc/guide/2.0/en/tutorial-i18n
+    // TODO Set up environments configuration
+    // TODO Set up and fix console and migrations instructions
+    // TODO Fix common / models
+    // TODO Finish adding components
+    // TODO Add CORS config to readme
