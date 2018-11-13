@@ -12,8 +12,8 @@
   "type": "project",
   "license": "BSD-3-Clause",
   "support": {
-    "issues": "https://github.com/yiisoft/yii2/issues?state=open",
-    "source": "https://github.com/yiisoft/yii2"
+    "issues": "https://github.com/FeedbackSoftware/yii2-api-template/issues?state=open",
+    "source": "https://github.com/FeedbackSoftware/yii2-api-template"
   },
   "minimum-stability": "stable",
   "require": {
