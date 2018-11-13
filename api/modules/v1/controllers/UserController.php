@@ -7,9 +7,5 @@ use base\rest\ActiveController;
 
 class UserController extends ActiveController
 {
-    public function actionStatus()
-    {
-        return 'online';
-    }
 
 }

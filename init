@@ -311,6 +311,5 @@ function formatMessage($message, $styles)
 // TODO Set up environments configuration
 // TODO Set up and fix console and migrations instructions
 // TODO Fix common / models
-// TODO Finish adding components
 // TODO Add CORS config to readme
 // TODO Add components description and ussage
