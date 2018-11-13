@@ -40,7 +40,9 @@ class ActiveController extends \yii\rest\ActiveController
 
     public function actionStatus()
     {
-        return 'online';
+        $version = `git log -1 --pretty=%h`;
+        $version = str_replace(array("\r", "\n"), '', $version);
+        return ['status' => 'online', 'version' => $version];
     }
 
 

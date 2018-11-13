@@ -33,6 +33,7 @@ return [
         'path' => 'local',
         'setWritable' => [
             'api/runtime',
+            'api/web/assets',
             'console/runtime',
         ],
         'setExecutable' => [
