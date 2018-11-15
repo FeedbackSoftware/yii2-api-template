@@ -89,25 +89,12 @@ console
     migrations/          contains database migrations
     models/              contains console-specific model classes
     runtime/             contains files generated during runtime
-backend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains backend configurations
-    controllers/         contains Web controller classes
-    models/              contains backend-specific model classes
+api
+    config/              contains api configurations
+    modules/             contains Web controller classes
     runtime/             contains files generated during runtime
-    tests/               contains tests for backend application    
-    views/               contains view files for the Web application
+    tests/               contains tests for api application    
     web/                 contains the entry script and Web resources
-frontend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains frontend configurations
-    controllers/         contains Web controller classes
-    models/              contains frontend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for frontend application
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-    widgets/             contains frontend widgets
 vendor/                  contains dependent 3rd-party packages
 environments/            contains environment-based overrides
 ```
@@ -129,4 +116,19 @@ To scan the tree 'sourcePath' to generate files default for labels used in the c
 
 To change target lenguage for example to spanish use 
 ```Yii::$app->language = 'es';```
+
+
+### Applying migrations
+
+The migrations can be found in ```@console/migrations``` .  The initial migration named ```m130524_201442_init.php``` contains the user table creation script, including the following aditions to 
+yii2 base user table:
+```
+id              string(36) - v4 UUID
+access_token    string(32) - user access token
+refresh_token   string(32) - used to refresh the access token
+created_at      int(13) - Time of creation
+updated_at      int(13) - Time of creation
+created_by      string(13) - id of the user that created the record
+updated_by      string(13) - id of the last user that updated the record
+```
 
