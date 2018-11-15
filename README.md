@@ -123,3 +123,17 @@ The i18n configuration file is located at ```<ProjectRoot>/messages/config-messa
 To extract your app messages you can do so using the [message command](https://www.yiiframework.com/doc/guide/2.0/en/tutorial-i18n#using-the-message-command).
 
 ```./yii message messages/config-messages.php```
+
+### Applying migrations
+
+The migrations can be found in ```@console/migrations``` .  The initial migration named ```m130524_201442_init.php``` contains the user table creation script, including the following aditions to 
+yii2 base user table:
+```
+id              string(36) - v4 UUID
+access_token    string(32) - user access token
+refresh_token   string(32) - used to refresh the access token
+created_at      int(13) - Time of creation
+updated_at      int(13) - Time of creation
+created_by      string(13) - id of the user that created the record
+updated_by      string(13) - id of the last user that updated the record
+```
