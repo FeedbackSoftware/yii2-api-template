@@ -67,12 +67,11 @@ return [
         ],
     ],
     'params' => $params,
-// TODO Check this Migration Controller
-//    'controllerMap' => [
-//        'migration' => [
-//            'class' => 'bizley\migration\controllers\MigrationController',
-//        ],
-//    ],
+    'controllerMap' => [
+        'migration' => [
+            'class' => 'bizley\migration\controllers\MigrationController',
+        ],
+    ],
 
 
 ];
