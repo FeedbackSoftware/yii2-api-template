@@ -42,7 +42,7 @@ class ActiveController extends \yii\rest\ActiveController
     {
         $version = `git log -1 --pretty=%h`;
         $version = str_replace(array("\r", "\n"), '', $version);
-        return ['status' => 'online', 'version' => $version];
+        return ['status' => Yii::t('api', 'online'), 'version' => $version];
     }
 
 

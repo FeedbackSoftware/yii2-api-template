@@ -123,3 +123,10 @@ The i18n configuration file is located at ```<ProjectRoot>/messages/config-messa
 To extract your app messages you can do so using the [message command](https://www.yiiframework.com/doc/guide/2.0/en/tutorial-i18n#using-the-message-command).
 
 ```./yii message messages/config-messages.php```
+
+To scan the tree 'sourcePath' to generate files default for labels used in the code  execute the follow command 
+```./yii message/extract @app/config/i18n.php ```
+
+To change target lenguage for example to spanish use 
+```Yii::$app->language = 'es';```
+
