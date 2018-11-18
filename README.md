@@ -74,6 +74,20 @@ return [
 - Check and edit the other files in the `config/` directory to customize your application as required.
 - Refer to the README in the `tests` directory for information specific to basic application tests.
 
+### Running in Apache
+
+Edit the Apache configuration file, this can be found in ```/etc/apache2/apache2.conf``` 
+
+Inside the security model section make sure to change the AllowOverride option from **None** to **All**
+so it looks like this
+```
+<Directory /var/www/>
+   	Options Indexes FollowSymLinks
+   	AllowOverride All
+   	Require all granted
+</Directory>
+```
+
 DIRECTORY STRUCTURE
 -------------------
 
@@ -111,8 +125,8 @@ To extract your app messages you can do so using the [message command](https://w
 
 ```./yii message messages/config-messages.php```
 
-To scan the tree 'sourcePath' to generate files default for labels used in the code  execute the follow command 
-```./yii message/extract @app/config/i18n.php ```
+To scan the tree 'sourcePath' to generate files default for labels used in the code  execute the following command 
+```./yii message/extract @app/messages/config-messages.php ```
 
 To change target lenguage for example to spanish use 
 ```Yii::$app->language = 'es';```

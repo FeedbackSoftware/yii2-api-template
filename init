@@ -307,9 +307,8 @@ function formatMessage($message, $styles)
 // TODO check .yml files and git attributes and bowerrc
 // TODO Set up testing according to business
 // TODO Set up automatic API Docs
-// TODO Set up i18n accoding to https://www.yiiframework.com/doc/guide/2.0/en/tutorial-i18n
-// TODO Set up environments configuration
-// TODO Set up and fix console and migrations instructions
+// TODO Set up and fix environments configuration
 // TODO Fix common / models
 // TODO Add CORS config to readme
 // TODO Add components description and ussage
+// TODO Create basic auth endpoints
