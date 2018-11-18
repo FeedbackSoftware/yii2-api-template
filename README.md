@@ -145,4 +145,8 @@ updated_at      int(13) - Time of creation
 created_by      string(13) - id of the user that created the record
 updated_by      string(13) - id of the last user that updated the record
 ```
+To apply the migrations execute the command
+```./yii migrate```
 
+To revert the migrations execute the command 
+```./yii migrate/down```
