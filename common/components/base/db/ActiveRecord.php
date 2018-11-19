@@ -4,6 +4,7 @@
 
     use base\util\UUID;
     use yii\behaviors\AttributeBehavior;
+    use yii\behaviors\BlameableBehavior;
     use yii\behaviors\TimestampBehavior;
 
     class ActiveRecord extends \yii\db\ActiveRecord
