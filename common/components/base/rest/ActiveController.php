@@ -6,13 +6,14 @@ use common\filters\CustomCors;
 use Yii;
 use yii\filters\auth\CompositeAuth;
 use yii\filters\auth\HttpBearerAuth;
+use yii\helpers\ArrayHelper;
 use yii\web\Response;
 
 class ActiveController extends \yii\rest\ActiveController
 {
     public function behaviors()
     {
-        return array_merge(parent::behaviors(), [
+        return ArrayHelper::merge(parent::behaviors(), [
             'corsFilter' => [
                 'class' => CustomCors::class,
                 'cors' => [
@@ -28,13 +29,6 @@ class ActiveController extends \yii\rest\ActiveController
                     'application/json' => Response::FORMAT_JSON,
                 ],
             ],
-            [
-                'class' => CompositeAuth::class,
-                'except' => ['status'],
-                'authMethods' => [
-                    HttpBearerAuth::class,
-                ],
-            ]
         ]);
     }
 
