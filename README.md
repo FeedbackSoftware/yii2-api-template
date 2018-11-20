@@ -151,7 +151,7 @@ To apply the migrations execute the command
 To revert the migrations execute the command 
 ```./yii migrate/down```
 
-### Congigurate tests
+### Congiguration of tests
 install codeception 
 ``composer require codeception/codeception --dev``
 
