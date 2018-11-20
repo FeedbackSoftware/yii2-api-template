@@ -150,3 +150,36 @@ To apply the migrations execute the command
 
 To revert the migrations execute the command 
 ```./yii migrate/down```
+
+### Congigurate tests
+install codeception 
+``composer require codeception/codeception --dev``
+
+create folder named `tests` in your project after execute follow command
+```./vendor/bin/codecept bootstrap```
+
+to active test to api execute
+``` ./vendor/bin/codecept generate:suite api ```
+
+for create a new test of api execute 
+``` ./vendor/bin/codecept generate:cest api CreateUser```
+
+create unit test execute the follow command
+``` ./vendor/bin/codecept generate:test unit Example```
+
+create advanced tests execute 
+```./vendor/bin/codecept generate:cest suitename CestName ```
+
+
+for execute all tests execute
+```./vendor/bin/codecept run ```
+
+for execute only the unit test execute
+``` ./vendor/bin/codecept run unit ```
+
+run test of only file
+``` ./vendor/bin/codecept run tests/api/UserLoginCept.php```
+
+
+
+

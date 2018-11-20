@@ -1,0 +1,10 @@
+actor: ApiTester
+modules:
+    enabled:
+          - REST:
+                url: /api/v1
+                depends: Yii2
+          - \Helper\Api
+        
+    config:
+          - Yii2

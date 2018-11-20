@@ -28,7 +28,8 @@ class UserController extends ActiveController
 
     public function actionSignup()
     {
-        return 'working';
+        return ['message' => 'working'];
+
     }
 
 }
