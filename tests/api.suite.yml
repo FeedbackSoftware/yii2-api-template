@@ -1,10 +1,9 @@
+class_name: ApiTester
 actor: ApiTester
 modules:
-    enabled:
-          - REST:
-                url: /api/v1
-                depends: Yii2
-          - \Helper\Api
-
-    config:
-          - Yii2
+  enabled:
+  - \Helper\Api
+  - REST:
+      url: http://127.0.0.1
+      depends: PhpBrowser
+      part: Json

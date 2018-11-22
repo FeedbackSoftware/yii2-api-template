@@ -1,21 +1,37 @@
-<?php 
+<?php
+
+use Codeception\Util\HttpCode;
 
 class UserCest
 {
     public function _before(ApiTester $I)
     {
+        //$file = 'var-local.php';
+        /*if (file_exists($file)) {
+            require $file;
+            $this->path = $path ?? "";
+        } */
+        $this->path = "http://127.0.0.1/~mariale/yii2-api-template/api/web/v1/";
     }
 
     // tests
     public function tryToTest(ApiTester $I)
     {
+        $I->sendGET( $this->path.'user/status');
+        $I->seeResponseCodeIs(HttpCode::OK); // 200
+        $I->seeResponseIsJson();
+
     }
 
     public function trySigUp(ApiTester $I){
-        $I->sendGET('user/signup');
+        $I->sendGET( $this->path.'user/signup');
         $I->seeResponseCodeIs(HttpCode::OK); // 200
         $I->seeResponseIsJson();
-        $I->seeResponseMatchesJsonType([
-            'message' => 'string']);
+        $I->canSeeResponseContainsJson([
+           'success' => true,
+            ]);
+
+
+
     }
 }
