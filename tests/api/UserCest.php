@@ -24,14 +24,28 @@ class UserCest
     }
 
     public function trySigUp(ApiTester $I){
-        $I->sendGET( $this->path.'user/signup');
+        $I->sendPOST( $this->path.'user/signup', ['username' => 'test@yopmail.com', 'password' => '123456']);
         $I->seeResponseCodeIs(HttpCode::OK); // 200
         $I->seeResponseIsJson();
         $I->canSeeResponseContainsJson([
            'success' => true,
             ]);
+        $I->seeResponseMatchesJsonType([
+            'success' => 'boolean',
+            'data' => 'array',
 
+        ]);
 
+    }
 
+    public function tryRegister(ApiTester $I){
+        $I->sendPOST( $this->path.'user/register', ['username' => 'test2@example.com', 'password' => '123456']);
+        $I->seeResponseCodeIs(HttpCode::OK);
+        $I->seeResponseIsJson();
+        $I->seeResponseMatchesJsonType([
+            'success' => 'boolean',
+            'data' => 'array',
+
+        ]);
     }
 }

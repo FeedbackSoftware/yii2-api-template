@@ -178,7 +178,7 @@ for execute only the unit test execute
 ``` ./vendor/bin/codecept run unit ```
 
 run test of only file
-``` ./vendor/bin/codecept run tests/api/UserLoginCept.php```
+``` ./vendor/bin/codecept run tests/api/UserCest.php```
 
 
 

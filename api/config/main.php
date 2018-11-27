@@ -65,6 +65,14 @@ return [
                 }
             },
         ],
+        'db' => [
+            'class' => 'yii\db\Connection',
+            'dsn' => 'mysql:host=127.0.0.1;port=3306;dbname=yii_app',
+            'username' => 'root',
+            'password' => 'm4r14l3j',
+            'charset' => 'utf8',
+
+        ]
     ],
     'params' => $params,
     'controllerMap' => [

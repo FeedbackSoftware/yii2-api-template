@@ -5,6 +5,7 @@ namespace api\modules\v1\controllers;
 
 use api\modules\v1\models\User;
 use base\rest\ActiveController;
+use phpDocumentor\Reflection\Types\Null_;
 use Yii;
 use yii\filters\auth\CompositeAuth;
 use yii\filters\auth\HttpBearerAuth;
@@ -20,7 +21,7 @@ class UserController extends ActiveController
             [
                 'class' => CompositeAuth::class,
                 // Status endpoint is inherited from the ActiveController class
-                'except' => ['status', 'signup'],
+                'except' => ['status', 'signup', 'register'],
                 'authMethods' => [
                     HttpBearerAuth::class,
                 ],
@@ -37,6 +38,33 @@ class UserController extends ActiveController
         $model->password = $request["password"];
 
         $response = $model->login();
+
+        return $response;
+
+    }
+
+    public function actionRegister(){
+        $model = new User();
+        $request = Yii::$app->request->post();
+
+        $model->username = $request["username"];
+        $model->password = $request["password"];
+        $model->email = $request["username"];
+
+        $user  = User::find()
+            ->where(['username' => $model->username])
+            ->one();
+
+        if($user == null){
+            $register = User::register($model);
+            return $register;
+
+        }
+        else{
+            return ["message" => "username is used by other user"];
+
+        }
+        $response = $model->register();
 
         return $response;
 
