@@ -5,6 +5,7 @@ namespace api\modules\v1\models;
 use Yii;
 use yii\base\Model;
 use base\db\ActiveRecord;
+use yii\behaviors\AttributeBehavior;
 use yii\web\IdentityInterface;
 
 /**
@@ -52,13 +53,30 @@ class User extends ActiveRecord implements IdentityInterface
         return '{{%user}}';
     }
 
+    public function behaviors()
+    {
+        return [
+            [
+                'class' => AttributeBehavior::className(),
+                'attributes' => [
+                    ActiveRecord::EVENT_BEFORE_INSERT => ['created_by', 'updated_by'],
+                    ActiveRecord::EVENT_BEFORE_UPDATE => 'updated_by'
+
+                ],
+                'value' => function ($event) {
+                    return Yii::$app->user->id;
+                },
+            ],
+        ];
+    }
+
     public function rules()
     {
         return [
             // username and password are both required
             [['username', 'password_hash'], 'required'],
             [['username', 'password_hash'], 'safe'],
-            [['username', 'password_hash'], 'string'],
+            [['username', 'password_hash', 'created_by', 'updated_by'], 'string'],
             // rememberMe must be a boolean value
             ['rememberMe', 'boolean'],
             // password is validated by validatePassword()
@@ -265,7 +283,7 @@ class User extends ActiveRecord implements IdentityInterface
     public function register($data){
 
         $user = new User();
-        $user->id= null;
+        $user->id= Yii::$app->security->generateRandomString(36);
         $user->email= $data->username;
         $user->username = $data->username;
         $user->setPassword($data->password);
@@ -275,6 +293,7 @@ class User extends ActiveRecord implements IdentityInterface
         $user->generateRefreshToken();
         $user->created_at = time() /1000;
         $user->updated_at = time() / 1000;
+        $user->created_by = 'test';
 
         $user->isNewRecord = true;
         if(!$user->save()) {
@@ -285,5 +304,6 @@ class User extends ActiveRecord implements IdentityInterface
 
         }
     }
+
 
 }
