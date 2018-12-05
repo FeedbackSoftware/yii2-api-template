@@ -32,7 +32,27 @@ use yii\web\IdentityInterface;
  * @property string $created_by
  * @property string $updated_by
  * @property string $password write-only password
+ *
+ * @SWG\Definition(required={"username", "email"})
+ *
+ * @SWG\Property(property="id", type="integer")
+ * @SWG\Property(property="email", type="string")
+ * @SWG\Property(property="username", type="string")
+ * @SWG\Property(property="password_hash", type="string")
+ * @SWG\Property(property="password_reset_token", type="string")
+ * @SWG\Property(property="auth_key", type="string")
+ * @SWG\Property(property="access_token", type="string")
+ * @SWG\Property(property="refresh_token", type="string")
+ * @SWG\Property(property="status", type="integer")
+ * @SWG\Property(property="created_at", type="integer")
+ * @SWG\Property(property="updated_at", type="integer")
+ * @SWG\Property(property="created_by", type="string")
+ * @SWG\Property(property="updated_by", type="string")
+ * @SWG\Property(property="password", type="string")
+ *
  */
+
+
 class User extends ActiveRecord implements IdentityInterface
 {
     public $userna;
