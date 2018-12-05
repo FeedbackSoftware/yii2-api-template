@@ -180,6 +180,13 @@ for execute only the unit test execute
 run test of only file
 ``` ./vendor/bin/codecept run tests/api/UserCest.php```
 
+### Documentation
+implentation of swagger and rest-api-doc
+
+https://github.com/yii2mod/yii2-swagger -- problems with route
+
+https://github.com/nostop8/yii2-rest-api-doc -- problems with /view/layout/main.php
+
 
 
 
