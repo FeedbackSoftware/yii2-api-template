@@ -1,5 +1,5 @@
 {
-  "name": "FeedbackSoftware/yii2-api-template",
+  "name": "feedback-software/yii2-api-template",
   "description": "Yii 2 REST API Template",
   "keywords": [
     "yii2",
@@ -18,18 +18,18 @@
   "minimum-stability": "stable",
   "require": {
     "php": ">=5.4.0",
-    "yiisoft/yii2": "~2.0.14",
-    "yiisoft/yii2-bootstrap": "~2.0.0",
+    "yiisoft/yii2": "^2.0.26",
+    "yiisoft/yii2-bootstrap": "^2.0.10",
     "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
-    "bizley/migration": "^3.0"
+    "bizley/migration": "^3.5"
   },
   "require-dev": {
-    "yiisoft/yii2-debug": "~2.0.0",
-    "yiisoft/yii2-gii": "~2.0.0",
+    "yiisoft/yii2-debug": "^2.1.8",
+    "yiisoft/yii2-gii": "^2.1.1",
     "yiisoft/yii2-faker": "~2.0.0",
     "codeception/base": "^2.4.0",
     "phpunit/phpunit": "~6.5.5",
-    "codeception/verify": "~1.0.0"
+    "codeception/verify": "~1.2.0"
   },
   "config": {
     "process-timeout": 1800,
