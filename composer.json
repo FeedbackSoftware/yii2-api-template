@@ -1,16 +1,21 @@
 {
-  "name": "feedback-software/yii2-api-template",
+  "name": "FeedbackSoftware/yii2-api-template",
   "description": "Yii 2 REST API Template",
+  "version": "2.0.0",
+  "readme": "README.md",
   "keywords": [
+    "yii",
     "yii2",
     "framework",
     "api",
     "rest",
-    "project template"
+    "project template",
+    "MIT",
+    "Feedback Software"
   ],
   "homepage": "http://fbacks.com/",
-  "type": "project",
-  "license": "BSD-3-Clause",
+  "type": "template",
+  "license": "MIT",
   "support": {
     "issues": "https://github.com/FeedbackSoftware/yii2-api-template/issues?state=open",
     "source": "https://github.com/FeedbackSoftware/yii2-api-template"
@@ -18,19 +23,9 @@
   "minimum-stability": "stable",
   "require": {
     "php": ">=5.4.0",
-    "yiisoft/yii2": "^2.0.26",
-    "yiisoft/yii2-bootstrap": "^2.0.10",
-    "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
-    "bizley/migration": "^3.5"
+    "yiisoft/yii2": "^2.0.35"
   },
   "require-dev": {
-    "yiisoft/yii2-debug": "^2.1.8",
-    "yiisoft/yii2-gii": "^2.1.1",
-    "yiisoft/yii2-faker": "~2.0.0",
-    "codeception/base": "^2.4.0",
-    "phpunit/phpunit": "~6.5.5",
-    "codeception/verify": "~1.2.0",
-    "codeception/codeception": "^2.5"
   },
   "config": {
     "process-timeout": 1800,
