@@ -1,7 +1,6 @@
 {
-  "name": "FeedbackSoftware/yii2-api-template",
+  "name": "fbacks/yii2-api-template",
   "description": "Yii 2 REST API Template",
-  "version": "2.0.0",
   "readme": "README.md",
   "keywords": [
     "yii",
