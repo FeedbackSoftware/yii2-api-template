@@ -1,6 +1,6 @@
 Yii 2 API Template
 ============================
-REQUIREMENTS
+Requirements
 ------------
 
 The minimum requirement by this project template that your Web server supports PHP 5.4.0.
@@ -8,48 +8,15 @@ Also it is recommended that your php installation has the following modules enab
 * intl:  to use advanced parameters formatting in Yii::t()
 
 
-INSTALLATION
+Installation
 ------------
 
-### Install from an Archive File
+The preferred way to install this template is through composer using the following command:
 
-Extract the archive file downloaded from [github.com](https://github.com/mattether/yii2-app-api/archive/master.zip) to
-a directory named `api` that is directly under the Web root.
-
-Set cookie validation key in `config/web.php` file to some random secret string:
-
-```php
-'request' => [
-    // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-    'cookieValidationKey' => '<secret random string goes here>',
-],
+```
+composer create-project --prefer-dist fbacks/yii2-api-template [app_name]
 ```
 
-You can then access the application through the following URL:
-
-~~~
-http://localhost/api/web/
-~~~
-
-
-### Install via Composer
-
-If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
-at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
-
-You can then install this project template using the following command:
-
-~~~
-php composer.phar global require "fxp/composer-asset-plugin:~1.1.1"
-php composer.phar create-project --prefer-dist --stability=dev ethercreative/yii2-app-api api
-~~~
-
-Now you should be able to access the application through the following URL, assuming `api` is the directory
-directly under the Web root.
-
-~~~
-http://localhost/api/web/
-~~~
 
 
 CONFIGURATION
