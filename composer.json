@@ -13,7 +13,6 @@
     "Feedback Software"
   ],
   "homepage": "http://fbacks.com/",
-  "type": "template",
   "license": "MIT",
   "support": {
     "issues": "https://github.com/FeedbackSoftware/yii2-api-template/issues?state=open",
