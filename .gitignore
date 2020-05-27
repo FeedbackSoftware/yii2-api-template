@@ -96,3 +96,12 @@ composer.phar
 # composer.lock
 .idea/modules.xml
 .idea/vcs.xml
+
+# yii console commands
+/yii
+/yii_test
+/yii_test.bat
+
+# ignore generated files
+/api/web/index.php
+/api/web/index-test.php

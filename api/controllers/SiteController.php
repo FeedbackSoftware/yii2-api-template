@@ -1,6 +1,6 @@
 <?php
 
-namespace micro\controllers;
+namespace api\controllers;
 
 use yii\web\Controller;
 
