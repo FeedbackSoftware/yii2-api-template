@@ -24,6 +24,7 @@
     "yiisoft/yii2": "^2.0.35"
   },
   "require-dev": {
+    "yiisoft/yii2-gii": "^2.2"
   },
   "config": {
     "process-timeout": 1800,
