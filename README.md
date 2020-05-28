@@ -11,11 +11,11 @@ The detailed documentation can be found at [docs/README.md](docs/README.md).
 Requirements
 ------------
 
-The minimum requirement by this project template that your Web server supports PHP 5.4.0.
+The minimum requirement by this project template is that your Web server supports PHP 5.4.0.
 Also it is recommended that your php installation has the following modules enabled:
 * intl:  to use advanced parameters formatting in Yii::t()
 
-To check the full requirements, please copy ```requirements.php``` from the project root to ```api/web``` folder, the navigate to the file from your web browser.
+To check the full requirements, please copy ```requirements.php``` from the project root to ```api/web``` folder, then navigate to the file from your web browser.
 
 
 Installation

@@ -18,6 +18,7 @@
     "issues": "https://github.com/FeedbackSoftware/yii2-api-template/issues?state=open",
     "source": "https://github.com/FeedbackSoftware/yii2-api-template"
   },
+  "type": "project",
   "minimum-stability": "stable",
   "require": {
     "php": ">=5.4.0",
