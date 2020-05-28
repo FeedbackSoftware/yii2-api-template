@@ -3,6 +3,12 @@ Yii 2 API Template
 
 This is a a REST API template built using Yii2. This template use Yii2-Micro approach so it will be lightweight and easy to deploy.
 
+Installation
+------------
+[1. Preparing application](preparing-application.md)
+
+[2. Creating new environments](new-environments.md)
+
 CONFIGURATION
 -------------
 
