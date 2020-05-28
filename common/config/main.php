@@ -1,4 +1,5 @@
 <?php
+
 return [
     // the basePath of the application will be the `micro-app` directory
     'basePath' => (__DIR__ . '/../../../yii2-api-template'),

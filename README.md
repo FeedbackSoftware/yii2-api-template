@@ -7,6 +7,8 @@ The minimum requirement by this project template that your Web server supports P
 Also it is recommended that your php installation has the following modules enabled:
 * intl:  to use advanced parameters formatting in Yii::t()
 
+To check the full requirements, please copy ```requirements.php``` from the project root to ```api/web``` folder, the navigate to the file from your web browser.
+
 
 Installation
 ------------
