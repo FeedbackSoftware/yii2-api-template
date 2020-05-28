@@ -12,10 +12,4 @@ return [
     // this is where the application will find all controllers
     'controllerNamespace' => 'console\controllers',
     'params' => $params,
-    'bootstrap' => ['gii'],
-    'modules' => [
-        'gii' => [
-            'class' => 'yii\gii\Module',
-        ],
-    ]
 ];

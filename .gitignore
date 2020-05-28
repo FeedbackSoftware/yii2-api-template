@@ -105,3 +105,4 @@ composer.phar
 # ignore generated files
 /api/web/index.php
 /api/web/index-test.php
+/api/web/robots.txt
