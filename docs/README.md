@@ -9,43 +9,6 @@ Installation
 
 [2. Creating new environments](new-environments.md)
 
-CONFIGURATION
--------------
-
-### Database
-
-Edit the file `config/db.php` with real data, for example:
-
-```php
-return [
-    'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=yii2basic',
-    'username' => 'root',
-    'password' => '1234',
-    'charset' => 'utf8',
-];
-```
-
-**NOTES:**
-- Yii won't create the database for you, this has to be done manually before you can access it.
-- Check and edit the other files in the `config/` directory to customize your application as required.
-- Refer to the README in the `tests` directory for information specific to basic application tests.
-
-### Running in Apache
-
-Edit the Apache configuration file, this can be found in ```/etc/apache2/apache2.conf``` 
-
-Inside the security model section make sure to change the AllowOverride option from **None** to **All**
-so it looks like this
-```
-<Directory /var/www/>
-   	Options Indexes FollowSymLinks
-   	AllowOverride All
-   	Require all granted
-</Directory>
-```
-
-
 GENERAL INDICATIONS
 -------------------
 
